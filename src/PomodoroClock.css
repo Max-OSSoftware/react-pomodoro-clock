@@ -4,14 +4,15 @@
 
 .container {
     max-width: 70%;
-    margin: auto;
+    margin: 0px auto; /* Add top and bottom margin */
     padding: 20px;
     text-align: center;
-    border: 10px solid grey;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border: 8px solid #ff8c00;
+    box-shadow: 5px 5px 10px rgba(14, 0, 0, 0.5);
     background-color: #fff;
-    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    font-family: 'Orbitron', sans-serif;
 }
+
 
 .length-control, #time-left, #timer-label {
     font-size: 2em;
