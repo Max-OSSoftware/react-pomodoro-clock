@@ -1,5 +1,5 @@
 
-
+- ![Model](https://github.com/zapboy216/react-pomodoro-clock/blob/main/public/images/screenshot.jpg)
 
 
 # Pomodoro Clock
@@ -22,7 +22,7 @@ This is a Project for the freecodecamp challenge in Front end Development Librar
 - **Custom CSS**: For additional styling
 - **Google Sounds**: Integrated for the alarm sound
 
-- ![Model](https://github.com/zapboy216/react-pomodoro-clock/blob/main/public/images/zapboy.jpg)
+
 
 ## Getting Started
 
