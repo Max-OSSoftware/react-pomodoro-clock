@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+
+
+.container {
+    max-width: 70%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border: 10px solid grey;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    background-color: #fff;
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+}
+
+.length-control, #time-left, #timer-label {
+    font-size: 2em;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+}
+
+.length-control button, #start_stop, #reset {
+    font-size: 1.5em;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.length-control span {
+    display: inline-block;
+    min-width: 50px;
+}
