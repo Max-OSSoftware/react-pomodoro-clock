@@ -37,13 +37,15 @@ class PomodoroClock extends React.Component {
     }
 
     decrementTimer = () => {
-        this.setState({ timeLeft: this.state.timeLeft - 1 }, () => {
-            if (this.state.timeLeft === 0) {
-                this.playBeep();
-                this.switchTimer();
-            }
-        });
-    }
+        if (this.state.timeLeft > 0) {
+            this.setState({ timeLeft: this.formatTime(this.state.timeLeft - 1) });
+        }
+        if (this.state.timeLeft === '00:00') {
+            this.playBeep();
+            this.switchTimer();
+        }
+    };
+    
 
     switchTimer = () => {
         if (this.state.timerLabel === 'Session') {
@@ -65,7 +67,7 @@ class PomodoroClock extends React.Component {
             breakLength: 5,
             sessionLength: 25,
             timerLabel: 'Session',
-            timeLeft: 25 * 60,
+            timeLeft: this.formatTime(25 * 60),
             isRunning: false,
             intervalID: null,
         });
@@ -77,6 +79,7 @@ class PomodoroClock extends React.Component {
         let seconds = timeInSeconds % 60;
         return `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
     }
+
 
     playBeep = () => {
         document.getElementById('beep').play();
@@ -96,6 +99,7 @@ class PomodoroClock extends React.Component {
 
                 <div id="timer-label">{this.state.timerLabel}</div>
                 <div id="time-left">{this.formatTime(this.state.timeLeft)}</div>
+                
 
                 <button id="start_stop" className="btn btn-primary" onClick={this.toggleTimer}>
                     Start/Stop
@@ -126,7 +130,7 @@ class PomodoroClock extends React.Component {
                     </button>
                 </div>
 
-                <audio id="beep" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"></audio>
+                <audio id="beep" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
             </div>
         );
     }
