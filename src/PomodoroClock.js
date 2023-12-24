@@ -104,6 +104,8 @@ class PomodoroClock extends React.Component {
         return (
             <div className="container text-center">
                 <h1>A Pomodoro Clock</h1>
+                <p>by Zapboy216</p>
+
                 <div id="timer-label">{this.state.timerLabel}</div>
                 <div id="time-left">{this.formatTime(this.state.timeLeft)}</div>
                 <button id="start_stop" className="btn btn-primary" onClick={this.toggleTimer}>
