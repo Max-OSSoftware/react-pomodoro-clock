@@ -1,4 +1,4 @@
-![Model](Paste_link_here)
+![Model](https://github.com/zapboy216/react-pomodoro-clock/blob/main/public/images/zapboy.jpg)
 
 
 
