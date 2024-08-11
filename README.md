@@ -5,8 +5,7 @@
 # Pomodoro Clock
 
 
-
-This is a Project for the freecodecamp challenge in Front end Development Libraries it is a Pomodoro Clock built using React and Bootstrap. The Pomodoro technique is a time management method that uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks. This clock allows users to set session and break times, start, stop, and reset the timer, and it alerts the user with a sound when the time is up.
+a Pomodoro Clock built using React and Bootstrap. The Pomodoro technique is a time management method that uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks. This clock allows users to set session and break times, start, stop, and reset the timer, and it alerts the user with a sound when the time is up.
 
 ## Features
 
